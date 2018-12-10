@@ -15,16 +15,16 @@
 <p>2.阈值 0.76 0.70   同类别样本大于0.76是黑色实线，大于0.70是灰色实线；不同类样本大于0.76是灰色虚线，大于0.70是浅灰色虚线。</p>
 <p>3.带权值邻接矩阵</p>
    #构建相似矩阵
-    def calEuclidDistanceMatrix(self):
-        Data = self.data
-        N = len(self.data)
-        self.W = np.zeros((N, N))
-        for i in range(N):
-            for j in range(i,N):
-                self.W[j][i] = self.W[i][j] = np.exp(-np.sum(np.square(self.data[i] - self.data[j])) / (2 * pow(self.gamma, 2))) #高斯核函数
-        a = np.ones(150)
-        b = diag(a) 
-        self.W = self.W - b #W矩阵对角线元素为零
+    <p>def calEuclidDistanceMatrix(self):</p>
+        <p>Data = self.data</p>
+        <p>N = len(self.data)</p>
+        <p>self.W = np.zeros((N, N))</p>
+        <p>for i in range(N):</p>
+            <p>for j in range(i,N):</p>
+                <p>self.W[j][i] = self.W[i][j] = np.exp(-np.sum(np.square(self.data[i] - self.data[j])) / (2 * pow(self.gamma, 2))) #高斯核函数</p>
+        <p>a = np.ones(150)</p>
+        <p>b = diag(a) </p>
+        <p>self.W = self.W - b #W矩阵对角线元素为零</p>
 <p>4.使用kmeans进行聚类</p>
   <p>clf = KMeans(n_clusters=3,algorithm='auto')</p>
   <p>bel_pred = clf.fit_predict(V) #label_pred = clf.labels_ 相同效果</p>
