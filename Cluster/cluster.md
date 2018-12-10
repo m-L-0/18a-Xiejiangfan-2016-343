@@ -1,15 +1,15 @@
 <h1>Clustering Schoolwork</h1>
 <h2>一、程序简介</h2>
 谱聚类对鸢尾花数据集进行处理，绘图，并输出正确率。
-<h2>二、函数说明（Spectum类中）<h2>
-1.normalization  功能：把数据集预处理。
+<h2>二、函数说明（Spectum类中）</h2>
+1.normalization  功能：把数据集预处理。</n>
 2.ou_dis         功能：求两节点欧氏距离
 3.calEucliDistanceMatrix  功能：构建相似矩阵W
 4.calLaplacianMatrix      功能：标准化拉普拉斯矩阵L，包括求度数矩阵D
 5.getEigVec      功能：求拉普拉斯矩阵L的特征值和特征向量
 6.Draw1          功能：画原始数据集
 7.Draw           功能：画谱聚类后的数据集
-<h2>三、任务列表<h2>
+<h2>三、任务列表</h2>
 1.鸢尾花数据集图
 ！[data](https://github.com/m-L-0/18a-Xiejiangfan-2016-343/blob/master/Cluster/deal_data.png)
 2.阈值 0.76 0.70   同类别样本大于0.76是黑色实线，大于0.70是灰色实线；不同类样本大于0.76是灰色虚线，大于0.70是浅灰色虚线。
